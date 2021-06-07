@@ -9,7 +9,8 @@
 </template>
 
 <script>
-import {Easing, scrollWithAnimation} from '../plugins/vue2-scrollspy/animate'
+import { Easing } from 'vue2-scrollspy'
+import { scrollWithAnimation } from 'vue2-scrollspy/src/animate'
 
 export default {
   name: 'GoTop',

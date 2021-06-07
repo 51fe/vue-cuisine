@@ -6,7 +6,6 @@ const actions = {
   getRecipeList({commit}, params) {
     commit(types.PRELOAD)
     axios.get(url, {params}).then(response => {
-      console.log(response.data)
       commit(types.LOADED)
       commit(types.GET_RECIPE_LIST_SUCCESS, {
         ...response.data,

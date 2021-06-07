@@ -7,7 +7,7 @@
 
 <script>
 import {mapGetters, mapMutations} from 'vuex'
-import RecipeList from './RecipeList';
+import RecipeList from './RecipeList'
 import Header from '../components/Header';
 import NavBar from '../components/NavBar'
 

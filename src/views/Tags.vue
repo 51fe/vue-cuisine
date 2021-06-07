@@ -2,7 +2,7 @@
   <div class="tags">
     <div class="sidebar">
       <ul class="menu" v-scroll-spy-active v-scroll-spy-link>
-        <li :key="cate.tags_id" v-for="(cate, index) in parentCategories" class="menu-item">
+        <li v-for="(cate, index) in parentCategories" :key="cate.tags_id" class="menu-item">
           <router-link :to="{params: {index}}">{{cate.catename}}</router-link>
           <i class="icon"></i>
         </li>

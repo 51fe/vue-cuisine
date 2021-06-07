@@ -6,8 +6,12 @@
         <ul class="nav-bar compact" v-scroll-nav="{id: $route.query.tags_id}">
           <li class="nav-bar-item" v-for="cate in nextList" :id="cate.tags_id">
             <router-link
-              :to="{query: {pid: $route.query.pid, tags_id: cate.tags_id, title: $route.query.title, orderby: $route.query.orderby}}"
-              exact replace>
+              :to="{query: {
+                pid: $route.query.pid,
+                tags_id: cate.tags_id,
+                title: $route.query.title,
+                orderby: $route.query.orderby
+              }}" exact replace>
               {{cate.catename}}
             </router-link>
           </li>
@@ -79,7 +83,7 @@ export default {
           const left = item.getBoundingClientRect().left
           // vw to px
           el.scrollLeft = left - Math.round(2.5 * el.clientWidth / 100);
-        }, 400)
+        }, 800)
       }
     }
   }
