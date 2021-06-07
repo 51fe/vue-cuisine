@@ -1,0 +1,161 @@
+@import 'variables';
+@import url('reset');
+@import url('animation');
+
+.mint-spinner-fading-circle {
+  margin: 0 auto;
+}
+
+.mint-indicator-text {
+  font-size: 14px !important;
+}
+
+.main-view {
+  position: absolute;
+  width: 100%;
+  top: 48px;
+  bottom: 56px;
+}
+
+.sub-view {
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.nav-bar {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  border-bottom: solid 1px @grey-light;
+  white-space: nowrap;
+  overflow-x: auto;
+  .nav-bar-item{
+    a {
+      display: inline-block;
+      white-space: nowrap;
+      margin: 0;
+      padding: 4px 8px;
+      color: @grey-black;
+      text-align: center;
+      &.router-link-active {
+        color: @green;
+        background-color: @white-smoke;
+        border-radius: 4px;
+      }
+    }
+  }
+  &.compact {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    .nav-bar-item {
+      a {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+}
+
+.page-title {
+  width: 100%;
+  font-size: 16px;;
+  text-align: center;
+  display: block;
+  line-height: 1;
+}
+
+.no-data {
+  display: flex;
+  text-align: center;
+  height: 72vh;
+}
+
+.no-data p {
+  margin: auto;
+}
+
+.fixed {
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  position: fixed;
+}
+
+.small {
+  font-size: small;
+}
+
+.text-clip {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.title {
+  padding-top: 8px;
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.grey {
+  color: @grey;
+}
+
+.responsive-img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-rigth {
+  text-align: right;
+}
+
+.ml-8 {
+  margin-left: 2.5vw;
+}
+
+.mr-8 {
+  margin-right: 2.5vw;
+}
+
+.ml-16 {
+  margin-left: 5vw;
+}
+
+.mr-16 {
+  margin-right: 5vw;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.tool-box {
+  position: fixed;
+  z-index: 1;
+  right: 5vw;
+  bottom: 16px;
+}
+
+.circle {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin-top: 8px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+}
