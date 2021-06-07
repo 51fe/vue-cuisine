@@ -4,10 +4,10 @@
 
 
 ## Snapshot:
-![Snapshot](https://github.com/51fe/vue-cuisine/blob/master/assets/img/snapshot.jpg?raw=true)
+![Snapshot](https://github.com/51fe/vue-cuisine/blob/master/src/assets/img/snapshot.jpg?raw=true)
 
 ## Qr code:
-![Qr code](https://github.com/51fe/vue-cuisine/blob/master/assets/img/qr-code.png?raw=true)
+![Qr code](https://github.com/51fe/vue-cuisine/blob/master/src/assets/img/qr-code.png?raw=true)
 
 
 ## Build Setup
